@@ -1,3 +1,4 @@
+## Get the latest AMI
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
@@ -8,7 +9,7 @@ module "ec2_instance" {
   monitoring             = true
   vpc_security_group_ids = ["sg-12345678"]
   subnet_id              = "subnet-eddcdzz4"
-
+# Create ec2
   tags = {
     Terraform   = "true"
     Environment = "dev"
